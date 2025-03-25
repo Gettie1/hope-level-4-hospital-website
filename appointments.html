@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - HOPE LEVEL 4 HOSPITAL</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    width: 98%;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #171616;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Book an Appointment</h1>
+    </header>
+
+    <main>
+        <section class="container">
+        <h2>Patient Registration</h2>
+        <form id="patient-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="disease">Disease:</label>
+            <input type="text" id="disease" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <h2>Doctor's List</h2>
+        <ul id="doctor-list">
+            <li>Dr. John Doe - Cardiologist</li>
+            <li>Dr. Sarah Smith - Neurologist</li>
+            <li>Dr. Emily Johnson - Orthopedic</li>
+            <li>Dr. Shadrack Sonya - Dentist </li>
+        </ul>
+
+        <h2>Appointments</h2>
+        <form id="appointment-form">
+            <label for="patient">Patient Name:</label>
+            <input type="text" id="patient" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor">
+                <option>Dr. John Doe</option>
+                <option>Dr. Sarah Smith</option>
+                <option>Dr. Emily Johnson</option>
+                <option>Dr. Shadrack Sonya</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <h2>Registered Patients</h2>
+        <ul id="patient-list"></ul>
+
+        <h2>Booked Appointments</h2>
+        <ul id="appointment-list"></ul>
+    </section>
+
+        <script src="index.js"></script>
+    </main>
+
+    <footer>
+            <p>Contact us: <a href="mailto:hopelevel4hospital@gmail.com">hopelevel4hospital@gmail.com</a></p>
+            <p>Phone:<a href="+254 700 000 000">+254 700 000 000</a></p>
+        <p>&copy; 2025 HOPE LEVEL 4 HOSPITAL. All rights reserved.</p>
+    </footer>
+</body>
+</html>

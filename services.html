@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOPE LEVEL 4 HOSPITAL</title>
+    <title>Services offered</title>
     <link rel="stylesheet" href="index.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            text-align: center;
             margin: 0;
             padding: 0;
         }
-
         header {
-            
             color: white;
             padding: 0px;
             font-size: 10px;
         }
-
         .navbar {
             display: flex;
             justify-content: center;
-            background-color: #5b5b5b;
+            background-color: #696969;
         }
-
         .nav-links {
             list-style-type: none;
-            font-size: 20px;
             padding: 10px;
             margin: 0;
             display: flex;
@@ -37,8 +31,8 @@
             align-items: center;
             text-align: center;
         }
-
-        main {
+        .services {
+           display: inline-block;
             width: 100%;
             margin: 0px;
             background: white;
@@ -46,11 +40,26 @@
             box-shadow: 0px 0px 10px gray;
             border-radius: 10px;
             margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
-        .home h1,p,h2 {
-            text-align: left;
+        .services p{
+            color: rgb(55, 8, 185);
         }
-
+        .about {
+            text-align: center;
+            margin: 10px;
+        }
+        .about p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .about img {
+            width: 90%;
+            height: 90%;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
         footer {
             background-color: #0c0505;
             color: white;
@@ -59,12 +68,12 @@
             text-align: center;
         }
     
-    </style>
+        </style>
 </head>
 <body>
             <div class="navbar">
             <img src="brandLogo.png" alt="Government logo" class="logo"/>
-            <ul class="nav-links" style="list-style-type: none ;color: green; display: flex; justify-content: space-around;gap: 20px;">
+            <ul class="nav-links">
             
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -72,31 +81,33 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="appointments.html">Appointment booking </a></li>
             </ul>
-        </div>
-   <header>
+       </div>
+    <header>
         <h1><marquee behavior="scroll" direction="left">Welcome to HOPE LEVEL 4 HOSPITAL</marquee></h1>
     </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to HOPE LEVEL 4 HOSPITAL. We are dedicated to providing the best healthcare services.</p>
-            <h2>We treat but Jesus Heals!</h2>
-            <section> <img src="hospital.jpg" alt="Hospital Building"> </section>
-        </section>
-        </main>
-    </div>
-        </body>
-        
-       
-    </main>
-    <footer>
-         <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us for more information or to make an appointment.</p>
-        </section>
+
+    <div class="services">
+            <h2>Services</h2>
+            <h4>Discover the wide range of medical services we offer.</h4>
+            <div>
+                <div class="about">
+                <p>General Consultation</p>
+                <img src="generalconsutation.jpg" alt="a doctor and a patient"></div>
+               <div class="about"> 
+                <p>Eye Clinic</p>
+                <img src="clinical.jpg" alt="a doctor and a patient"></div> 
+                <div class="about">
+                <p>Dental Clinic</p>
+                <img src="dentist.jpg" alt="a doctor and a patient"></div> 
+               <div class="about"> 
+                <p>Physiotherapy</p>
+                <img src="care.jpg" alt="a doctor and a patient"></div> 
+            </div>
+        </div>
+        <footer>
             <p>Contact us: <a href="mailto:hopelevel4hospital@gmail.com">hopelevel4hospital@gmail.com</a></p>
             <p>Phone:<a href="+254 700 000 000">+254 700 000 000</a></p>
-        <p>&copy; 2025 HOPE LEVEL 4 HOSPITAL. All rights reserved.</p>
-    </footer>
+            &copy; 2025 HOPE LEVEL 4 HOSPITAL. All rights reserved.
+        </footer>
 </body>
 </html>
